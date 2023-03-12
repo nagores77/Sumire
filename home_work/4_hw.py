@@ -29,3 +29,23 @@ class Math:
         self.a = a
         self.b = b
 
+    def addition(self):
+        return self.a + self.b
+
+    def multiplication(self):
+        return self.a * self.b
+
+    def division(self):
+        return self.a / self.b
+
+    def subtraction(self):
+        return self.a - self.b
+
+
+result = Math(5, 3)
+print(result.addition())
+print(result.multiplication())
+print(result.division())
+print(result.subtraction())
+
+
