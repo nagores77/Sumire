@@ -49,3 +49,56 @@ print(result.division())
 print(result.subtraction())
 
 
+class Button:
+    def __init__(self, text, elem, loc=None):
+        self.text = text
+        self.elem = elem
+        self.loc = loc
+
+    def click(self):
+        return "Клик по кнопке - {}".format(self.text)
+
+
+text_box = Button('Text Box', 'Кнопка')
+check_box = Button('Check Box', 'Кнопка')
+radio_button = Button('Radio Button', 'Кнопка')
+web_table = Button('Web Table', 'Кнопка')
+buttons = Button('Buttons', 'Кнопка')
+links = Button('Links', 'Кнопка')
+broken_links = Button('Broken Links', 'Кнопка')
+upload_download = Button('Upload and Download', 'Кнопка')
+dynamic_properties = Button('Dynamic Properties', 'Кнопка')
+
+print(text_box.text)
+print(text_box.click())
+
+print(check_box.text)
+print(check_box.click())
+
+print(radio_button.text)
+print(radio_button.click())
+
+print(web_table.text)
+print(web_table.click())
+
+print(buttons.text)
+print(buttons.click())
+
+print(links.text)
+print(links.click())
+
+print(broken_links.text)
+print(broken_links.click())
+
+print(upload_download.text)
+print(upload_download.click())
+
+print(dynamic_properties.text)
+print(dynamic_properties.click)
+
+
+
+
+
+
+

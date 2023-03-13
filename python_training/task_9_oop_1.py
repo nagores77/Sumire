@@ -1,5 +1,7 @@
-class Input:
+from task_9_checks import Checks
+class Input(Checks):
     def __init__(self, loc, text):
+        super().__init__(loc)
         self.loc = loc
         self.text = text
 
@@ -10,8 +12,9 @@ search = Input('#Поиск', '/poisk')
 number = Input('Twenty', '/twenty')
 print(number.text, search.loc)
 
-class Button:
+class Button (Checks):
     def __init__(self, text, loc):
+        super().__init__(loc)
         self.text = text
         self.loc = loc
 
@@ -21,8 +24,9 @@ up = Button('Вверх', '/up')
 
 print(back.text, up.loc)
 
-class Title:
+class Title(Checks):
     def __init__(self, text, loc):
+        super().__init__(loc)
         self.text = text
         self.loc = loc
 
@@ -32,8 +36,9 @@ subtitle = Title('About', '/link')
 
 print(main.text, subtitle.loc)
 
-class Link:
+class Link(Checks):
     def __init__(self, text, loc):
+        super().__init__(loc)
         self.text = text
         self.loc = loc
 
