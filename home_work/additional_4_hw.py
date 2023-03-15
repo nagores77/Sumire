@@ -12,21 +12,22 @@ class Car:
         return "Автомобиль заглушен"
 
 
-    def manufacture(self):
-        return "Автомобиль - {}".format(self.year)
+    def manufacture(self, year_new):
+        self.year = year_new
 
-    def model(self):
-        return "Автомобиль - {}".format(self.type)
 
-    def outer(self):
-        return "Автомобиль - {}".format(self.color)
+    def model(self, type_new):
+        self.type = type_new
+
+
+    def outer(self, color_new):
+        self.color = color_new
+
 
 car1 = Car('blue ', 'Rav4 ', '2021')
 print(car1.start())
 print(car1.stop())
-print(car1.manufacture())
-print(car1.model())
-print(car1.outer())
+
 
 
 

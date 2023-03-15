@@ -50,7 +50,7 @@ print(result.subtraction())
 
 
 class Button:
-    def __init__(self, text, elem, loc=None):
+    def __init__(self, text, elem='Кнопка', loc=None):
         self.text = text
         self.elem = elem
         self.loc = loc
@@ -59,15 +59,15 @@ class Button:
         return "Клик по кнопке - {}".format(self.text)
 
 
-text_box = Button('Text Box', 'Кнопка')
-check_box = Button('Check Box', 'Кнопка')
-radio_button = Button('Radio Button', 'Кнопка')
-web_table = Button('Web Table', 'Кнопка')
-buttons = Button('Buttons', 'Кнопка')
-links = Button('Links', 'Кнопка')
-broken_links = Button('Broken Links', 'Кнопка')
-upload_download = Button('Upload and Download', 'Кнопка')
-dynamic_properties = Button('Dynamic Properties', 'Кнопка')
+text_box = Button('Text Box')
+check_box = Button('Check Box')
+radio_button = Button('Radio Button')
+web_table = Button('Web Table')
+buttons = Button('Buttons')
+links = Button('Links')
+broken_links = Button('Broken Links')
+upload_download = Button('Upload and Download')
+dynamic_properties = Button('Dynamic Properties')
 
 print(text_box.text)
 print(text_box.click())
